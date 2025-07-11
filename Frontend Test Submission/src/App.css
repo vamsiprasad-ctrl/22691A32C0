@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #23293a 0%, #1e2230 100%);
+  background-attachment: fixed;
+}
+
+.fade-in {
+  animation: fadeIn 0.7s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: none; }
+}
+
+.glass {
+  background: rgba(36, 40, 54, 0.7);
+  box-shadow: 0 8px 32px 0 #0003;
+  backdrop-filter: blur(12px);
+  border-radius: 24px;
+  border: 1.5px solid rgba(255,255,255,0.08);
+}
+
+.fab {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  z-index: 1000;
+}
+
+@media (max-width: 600px) {
+  .fab {
+    bottom: 16px;
+    right: 16px;
+  }
+}
+
+footer {
+  text-align: center;
+  color: #aaa;
+  margin-top: 48px;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+}

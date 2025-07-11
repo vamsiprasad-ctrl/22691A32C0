@@ -1,0 +1,14 @@
+// src/utils/token.js
+
+export const BEARER_TOKEN =
+  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOnsiYXVkIjoiaHR0cDovLzIwLjI0NC41Ni4xNDQvZXZhbHVhdGlvbi1zZXJ2aWNlIiwiZW1haWwiOiIyNjkxYTMyYzBAbWl0cy5hYy5pbiIsImV4cCI6MTc1MjIxMDg4MiwiaWF0IjoxNzUyMjA5OTgyLCJpc3MiOiJBZmZvcmQgTWVkaWNhbCBUZWNobm9sb2dpZXMgUHJpdmF0ZSBMaW1pdGVkIiwianRpIjoiZDY4ZGFjZDMtOTVkYy00ODU4LTg0YzQtNzg5NmQ4MjQ4YjVmIiwibG9jYWxlIjoiZW4tSU4iLCJuYW1lIjoidmFtc2kgcHJhc2FkIHB1cnVtIiwic3ViIjoiNGQ1MGE2N2QtMjQyMC00ODBjLWIwNGItMWUwNzU0NDRkYzhhIn0sImVtYWlsIjoiMjY5MWEzMmMwQG1pdHMuYWMuaW4iLCJuYW1lIjoidmFtc2kgcHJhc2FkIHB1cnVtIiwicm9sbE5vIjoiMjI2OTFhMzJjMCIsImFjY2Vzc0NvZGUiOiJjYVZ2TkgiLCJjbGllbnRJRCI6IjRkNTBhNjdkLTI0MjAtNDgwYy1iMDRiLTFlMDc1NDQ0ZGM4YSIsImNsaWVudFNlY3JldCI6IldCWHJiY1h4RHBhZXV2a2UifQ.c2V6jLzavAvgYCzVk6Yu-K0JOsjsCnTLGdRBXp64Vqs';
+
+export function setTokenIfMissing() {
+  if (!localStorage.getItem('token')) {
+    localStorage.setItem('token', BEARER_TOKEN);
+  }
+}
+
+export function getToken() {
+  return localStorage.getItem('token') || '';
+}
