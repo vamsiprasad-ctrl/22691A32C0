@@ -64,14 +64,17 @@ Frontend Test Submission/
 
 ---
 
-## 🧑‍💻 Beginner-Friendly Usage
+## 🧑‍💻 How to Use
 
-### 1. **Clone the repository**
+### 🔽 1. Clone the Repository
+
 ```sh
-git clone https://github.com/your-username/your-repo.git
-cd your-repo/Frontend\ Test\ Submission
+git clone https://github.com/vamsiprasad-ctrl/22691A32C0.git
+cd "22691A32C0/Frontend Test Submission"
 ```
 
+```
+```
 ### 2. **Install dependencies**
 ```sh
 npm install
